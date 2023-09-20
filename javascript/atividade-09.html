@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade08</title>
+
+    <!-- //Verificar a idade e autorização
+    Crie um programa que pede a idade de um usuario e verifica se ele é maior de 18 e se tem autorização dos pais.Se
+    ambas as condições forem verdadeiras, exiba
+    "Pode entrar", caso contrário, exiba "Não pode entrar". -->
+
+
+    <script>
+
+        let idade = prompt('Qual é a sua idade?','');
+
+        let autorizacao = prompt('Você tem autorização dos pais? (sim ou não)','');
+
+ 
+
+        if(autorizacao == 'sim' && idade == '18') {
+
+            document.write('<b> Idade: </b>' + idade)
+
+            document.write('<br> <b> <font color=blue> Pode Entrar </b> </font>')
+
+        } else {
+
+            document.write('<b> Idade: </b>' + idade)
+
+            document.write('<br> <b> <font color=red> NÃO pode entrar </b> </font>')
+
+        }
+
+
+
+
+
+
