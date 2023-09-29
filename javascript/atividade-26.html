@@ -1,0 +1,85 @@
+<script>
+
+ 
+
+    let primeiro = parseInt(prompt('Primeiro Valor: ', ''));
+
+    let segundo = parseInt(prompt('Segundo Valor: ', ''));
+
+    let operacao = prompt('Operação escolhida: ', '');
+
+
+
+    let op;
+
+    let res;
+
+    // let multiplicacao;
+
+    // let divisao;
+
+
+
+    switch (operacao) {
+
+        case '+':
+
+            op = 'Soma';
+
+            res = (primeiro + segundo);
+
+            break;
+
+
+
+        case '-':
+
+            op = 'Subtração';
+
+            res = (primeiro - segundo);
+
+            break;
+
+
+
+        case '*':
+
+            op = 'Multiplicação';
+
+            res = (primeiro * segundo);
+
+            break;
+
+
+
+        case '/':
+
+            op = 'Divisão';
+
+            res = (primeiro / segundo);
+
+            break;
+
+
+
+        default:
+
+            operacao = 'Valor Inválido';
+
+
+
+    }
+
+
+
+    document.write('Primeiro Valor: ' + primeiro);
+
+    document.write('<br>Segundo Valor: ' + segundo);
+
+    document.write('<br>Operação escolhida: ' + op);
+
+    document.write('<br>Resultado: ' + res);
+
+
+
+</script>
