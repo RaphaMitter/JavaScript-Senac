@@ -1,0 +1,179 @@
+<script>
+
+    function errado1() {
+
+        document.getElementById('sorteioBolinhas1').innerHTML = 'X'
+
+    }
+
+
+
+    function errado2() {
+
+        document.getElementById('sorteioBolinhas2').innerHTML = 'X'
+
+    }
+
+
+
+    function premiado() {
+
+        document.getElementById('sorteioBolinhas3').innerHTML = 'PREMIADO'
+
+    }
+
+
+
+    function errado3() {
+
+        document.getElementById('sorteioBolinhas4').innerHTML = 'X'
+
+    }
+
+
+
+    function errado4() {
+
+        document.getElementById('sorteioBolinhas5').innerHTML = 'X'
+
+    }
+
+
+
+</script>
+
+
+
+
+
+
+
+<div style="display: flex; justify-content: center; margin-top: 250px;">
+
+
+
+    <div onclick="errado1()" style="background-color: blue; width: 350px; height: 350px; border-radius: 50%;">
+
+        <p id="sorteioBolinhas1" style="text-align: center; margin-top: 145px; font-size: 50px;"></p>
+
+    </div>
+
+
+
+    <div onclick="errado2()" style="background-color: red; width: 350px; height: 350px; border-radius: 50%;">
+
+        <p id="sorteioBolinhas2" style="text-align: center; margin-top: 145px; font-size: 50px;"></p>
+
+    </div>
+
+
+
+    <div onclick="premiado()" style="background-color: green; width: 350px; height: 350px; border-radius: 50%;">
+
+        <p id="sorteioBolinhas3" style="text-align: center; margin-top: 145px; font-size: 50px;"></p>
+
+    </div>
+
+
+
+    <div onclick="errado3()" style="background-color: orange; width: 350px; height: 350px; border-radius: 50%;">
+
+        <p id="sorteioBolinhas4" style="text-align: center; margin-top: 145px; font-size: 50px;"></p>
+
+    </div>
+
+
+
+    <div onclick="errado4()" style="background-color: pink; width: 350px; height: 350px; border-radius: 50%;">
+
+        <p id="sorteioBolinhas5" style="text-align: center; margin-top: 145px; font-size: 50px;"></p>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Atividade 29</title>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+    <style>
+        #container {
+
+            display: flex;
+
+            margin: 5px;
+
+        }
+
+        .area {
+
+            width: 120px;
+
+            height: 120px;
+
+            border-radius: 50%;
+
+            border: 1px solid #000;
+
+            margin: 5px;
+
+            background-color: red;
+
+            align-items: center;
+
+            justify-content: center;
+
+            display: flex;
+
+            font-size: 20px;
+
+        }
+    </style>
+</body>
+
+</html>
+
+outra maneira
+
+
+<!-- <div id="container">
+
+    <div  onclick="this.style.backgroundColor = 'white'" onmouseout="this.style.backgroundColor = 'red'" class="area"> <font color="red">X</font></div>
+
+    <div  onclick="this.style.backgroundColor = 'white'" onmouseout="this.style.backgroundColor = 'red'" class="area"> <font color="red">X</font></div>
+
+    <div  onclick="this.style.backgroundColor = 'white'" onmouseout="this.style.backgroundColor = 'red'" class="area"> <font color="red">X</font></div>
+
+    <div  onclick="this.style.backgroundColor = 'white'" onmouseout="this.style.backgroundColor = 'red'" class="area"> <font color="red">PREMIADO</font></div>
+
+    <div  onclick="this.style.backgroundColor = 'white'" onmouseout="this.style.backgroundColor = 'red'" class="area"> <font color="red">X</font></div>
+
+</div> -->
