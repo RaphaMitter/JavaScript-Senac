@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Rélogio</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            background-image: url("papelderelogio.png");
+            background-repeat: no-repeat;
+        }
+
+
+
+
+        #container {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 500px;
+
+        }
+
+        .horas,
+        .minutos,
+        .segundos {
+            align-self: center;
+            border: 2px solid rgb(240, 238, 129);
+            padding: 35px;
+            border-radius: 5px;
+            margin-top: 10px;
+            background-color:cadetblue;
+            box-shadow: 5px 10px 5px 10px;
+            height: 20px;
+            width: 50px;
+            margin: 5px;
+
+
+        }
+    </style>
+
+    <div id="container">
+
+
+        <span id="horas" class="horas">00</span>
+        <span>:</span>
+        <span id="minutos" class="minutos">00</span>
+        <span>:</span>
+        <span id="segundos" class="segundos">00</span>
+    </div>
+
+
+
+    <script>
+        const horas = document.getElementById('horas');
+        const minutos = document.getElementById('minutos');
+        const segundos = document.getElementById('segundos');
+
+
+
+        const relogio = setInterval(function time() {
+            let dateToday = new Date();
+            let hr = dateToday.getHours();
+            let min = dateToday.getMinutes();
+            let s = dateToday.getSeconds();
+
+
+            if (hr < 10) hr = '0' + hr;
+            if (min < 10) min = '0' + min;
+            if (s < 10) s = '0' + s;
+
+
+            horas.textContent = hr;
+            minutos.textContent = min;
+            segundos.textContent = s;
+        })
+
+    </script>
+</body>
+
+</html>
