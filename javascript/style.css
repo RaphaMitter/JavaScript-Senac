@@ -28,7 +28,7 @@ aside {
     display: block; 
     font-size: 10pt;
     text-align: justify;
-    background-color: #44749d;
+    background-color: #04345d;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -47,6 +47,6 @@ a, a:visited {
 }
 
 a:hover {
-    color: darkgoldenrod;
+    color: rgb(77, 45, 88);
     text-decoration: none;
 }
