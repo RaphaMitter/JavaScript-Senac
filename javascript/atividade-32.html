@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos do Teclado</title>
+</head>
+
+<body>
+    <h3 style="color: rgb(31, 54, 167);">Eventos do Teclado</h3>
+
+    <h4>Evento onkeydown</h4>
+    <p id="onekeydown"></p>
+
+    <h4>Evento onkeyup</h4>
+    <p id="onekeyup"></p>
+
+    <h4>Evento onkeypress</h4>
+    <p>Abra o console e veja o resultado dessa ação.</p>
+    <script>
+
+        document.onkeydown = function (event) {
+
+            let tecla = event.key;
+            console.log(tecla);
+
+            document.getElementById("onekeydown").innerText = "Você pressionou a tecla: " + tecla.toUpperCase();
+
+        }
+
+
+        document.onkeyup = function (event) {
+
+            let tecla = event.key;
+            console.log(tecla);
+
+            document.getElementById("onekeyup").innerText = "Você soltou a tecla: " + tecla.toUpperCase();
+
+        }
+
+        document.onekeypress = function (event) {
+
+            console.log("você digitou a letra: "+event.key);
+
+        }
+
+
+    </script>
+</body>
+
+</html>

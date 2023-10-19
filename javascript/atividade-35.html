@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <h2>Frutas</h2>
+
+    Fruta:<input type="text" id="fruta">
+    <button onclick="adicionar()">Adicionar</button>
+
+    <h3>Lista de Frutas</h3>
+    <ul id="lista">
+
+    </ul>
+
+    <script>
+
+        let frutas = Array();
+
+        function adicionar(){
+            let fruta = document.getElementById("fruta").value;
+            //Implementar
+            //Adicionar a fruta no Array
+            frutas.push(fruta);
+            console.log(frutas);
+            document.getElementById("lista").innerHTML = "<li>"+frutas+"</li>";
+        }
+
+    </script>
+
+</body>
+</html>

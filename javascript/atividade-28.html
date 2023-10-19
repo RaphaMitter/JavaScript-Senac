@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+
+
+<body>
+
+    <script>
+
+
+        let data = new Date();
+        let dia = data.getDay();// dia
+        let diames = data.getDate();
+        let mes = data.getMonth();
+        let ano = data.getFullYear();
+
+
+
+        if (dia < 10) {
+
+            dia = "0" + dia;
+
+        }
+        let diadasemana;
+        let nomemes;
+
+        // Desenvolvendo o dia da semana por extenso
+
+        switch (dia) {
+
+            case '00':
+
+                diadasemana = "Domingo";
+
+                break;
+            case '01':
+
+                diadasemana = "Segunda-Feira"
+
+                break
+            case '02':
+
+                diadasemana = "Terça-Feira"
+
+                break
+            case '03':
+
+                diadasemana = "Quarta-Feira"
+
+                break
+            case '04':
+
+                diadasemana = "Quinta-Feira"
+
+                break
+            case '05':
+
+                diadasemana = "Sexta-Feira"
+
+                break
+            case '06':
+
+                diadasemana = "Sábado"
+
+                break
+            default:
+
+                break;
+
+        }
+
+        // Desenvolvendo o mes por extenso
+
+        switch (mes) {
+
+            case 0:
+
+                nomemes = "Janeiro";
+
+                break;
+            case 1:
+
+                nomemes = "Fevereiro"
+
+                break
+            case 2:
+
+                nomemes = "Março"
+
+                break
+            case 3:
+
+                nomemes = "Abril"
+
+                break
+            case 4:
+
+                nomemes = "Maio"
+
+                break
+            case 5:
+
+                nomemes = "Junho"
+
+                break
+            case 6:
+
+                nomemes = "julho"
+
+                break
+            case 7:
+
+                nomemes = "Agosto";
+
+                break;
+            case 8:
+
+                nomemes = "Setembro"
+
+                break
+            case 9:
+
+                nomemes = "Outubro"
+
+                break
+            case 10:
+
+                nomemes = "Novembro"
+
+                break
+            case 11:
+
+                nomemes = "Desembro"
+
+                break
+            default:
+
+                break;
+
+        }
+
+
+
+        document.write(diadasemana + "," + diames + " de " + nomemes + " de " + ano)
+
+    </script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos do Mouse</title>
+</head>
+<style>
+
+    h3 {
+        color:rgb(54, 197, 28);
+    }
+
+    #mouseout {
+        width: 150px;
+        height: 150px;
+    }
+</style>
+
+<body>
+    <h3>Eventos do Mouse</h3>
+
+    <h4>Evento onclick</h4>
+
+    <button onclick="eventoOnClick()">Clique aqui</button>
+
+    <h4>Evento ondbclick</h4>
+
+    <button ondblclick="eventoOnDbClick()">Clique aqui 2x</button>
+
+    <h4>Evento onmouseover</h4>
+
+    <button onmouseover="eventoOnMouseOver()">Passe o mouse aqui</button>
+
+    <h4>Evento onmouseout</h4>
+
+    <button id="mouseout" onmouseout="eventoOnMouseOut()">Coloque o mouse aqui e depois tire o mouse do botão</button>
+
+    <h4>Evento onmouseup</h4>
+
+    <button onmouseup="eventoOnMouseUp()">Clique e depois solte</button>
+
+    <script>
+        function eventoOnClick(){
+            alert("Você utilizou o evento onclick! :)");
+        }
+
+        function eventoOnDbClick(){
+            alert("Você utilizou o evento ondbclick! :)");
+        }
+
+        function eventoOnMouseOver(){
+            document.bgColor = "#ffc5bb";
+        }
+
+        function eventoOnMouseOut(){
+            document.bgColor = "#ffbce9";
+        }
+
+        function eventoOnMouseUp(){
+            document.bgColor = "#abb1fa";
+        }
+
+    </script>
+
+</body>
+</html>
